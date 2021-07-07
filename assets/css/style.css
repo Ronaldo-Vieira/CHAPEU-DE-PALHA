@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Pirata One', cursive;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+
+:root{
+    --color_nav: #C0DEDE;
+    --color-nav-hover: #f9cb5f;
+    --themer-bg: #0f243b;
+    --shadow: 0px 3px 15px rgba(255, 255, 255, 0.555);
+}
+#menu-head, #menu-card-mobi{
+    display: none;
+}
+
+header{
+    background-color: var(--themer-bg);
+    color: var(--color_nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: var(--shadow);
+
+}
+#titulo-head{
+    display: flex;
+    align-content: center;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 20pt;
+}
+#nav-head nav ul{
+    display: flex;
+}
+#nav-head li {
+    display: flex;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20pt;
+}
+#nav-head li:hover{ 
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 25px;
+    color: var(--color-nav-hover);
+    transition: 0.4s;
+} 
+#carrinho {
+    display: flex;
+    align-items: center;
+}
+#carrinho img{
+    padding-left: 10px;
+}
+
+#sect-banner{
+    background-image: url("../imagens/restaurante.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+#sect-title{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    color: #0f243b;
+    font-size: 30pt;
+    justify-content: center;
+    text-shadow: 0px 3px 15px rgba(255, 255, 255, 0.726);
+
+}
+
+
+#sect-btn{
+    display: flex;
+    align-self: center;
+    margin-top: 200px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18pt;
+    border-radius: 35px;
+    background-color: rgba(170, 168, 168, 0.63);
+    color: var(--color_nav);
+    text-shadow: 1px 3px 10px rgba(207, 80, 80, 0.589);
+    
+}
+#sect-btn:hover{
+    transition: 1.5s;
+    background-color: #282b28;
+    color: #e4290d ;
+}
+
+aside{
+    display: flex;
+    height: 800px;
+    background-image: url("../imagens/banner-bando.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#menu-cardapio{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--themer-bg);
+}
+
+#menu-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30pt;
+    justify-content: space-around;
+    color: var(--color_nav);
+}
+
+#cont-nav{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.menu{
+    display: flex;
+    padding: 20px;
+    margin: 5px;
+    font-size: 18pt;
+    align-items: center;
+    color: var(--color_nav);
+    border-radius: 5px;
+}
+.menu:hover{
+    color: var(--color-nav-hover);
+    background-color: rgba(245, 245, 220, 0.753);
+}
+#cont-cardapio{
+    display: flex;
+    flex-direction: column;
+    background-color: #DADCE2;
+}
+
+.cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}   
+
+
+.img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+
+.desc-img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
+.desc-img h1{
+    font-family: 'Playfair Display SC', serif; 
+    font-size: 16pt;
+}
+
+.title-img{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+.comprar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.comprar h4{ 
+    border: 1px solid ;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Abel', sans-serif;
+    background-color: #e4290d;
+    color: var(--color_nav);
+}
+.preço{
+    font-family: 'Abel', sans-serif;
+    font-size: 18pt;
+    display: flex;
+}
+.ingredientes h3, .ingredientes li{
+    font-family: 'Abel', sans-serif;
+    margin-left: 10px;
+    list-style: circle;
+}
+
+#container-foot{
+    background-color: var(--themer-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#redes-sociais img{
+    margin: 10px;
+}
+#copy, #btn-up{
+    color: #cccc;
+    font-family: 'Abel', sans-serif;
+    font-size: 15pt;
+    margin-top: 10px;
+}
+@media (max-width: 800px){
+    header{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+    #titulo h1{
+        font-size: 30pt;
+    }
+
+    #img_title{
+        width: 50px;
+    }
+
+    #nav-head{
+        display: none;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+        border: 1px solid #ccc;
+    }
+
+    #nav-head nav ul{
+        flex-direction: column; 
+    }
+    #cont-nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu-head{
+        margin-left: 20px;
+    }
+    #menu-head, #menu-card-mobi{
+        display: flex;
+    }
+}
+@media(max-width: 350px){
+    #titulo h1{
+        font-size: 20pt;
+    }
+}

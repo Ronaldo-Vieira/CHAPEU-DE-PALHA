@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="shortcut icon" href="assets/imagens/favicon.ico" type="image/x-icon">
+        <script src="assets/JS/script.js"></script>
+        <title>CHAPEU DE PALHA | RESTAURANTE</title>
+
+    </head>
+    <body>
+        <header>
+            <div id="titulo-head">
+                <div id="titulo">
+                    <img src="assets/imagens/bandeira-r.png" alt="" id="img_title"> 
+                    <h1>CHAPEU DE PALHA</h1>
+                </div>
+                <div id="menu-head" onclick="menu_head()">
+                    <img src="assets/imagens/figuras/menu-hamb.png" alt="">
+                </div>
+            </div>
+            <div id="nav-head"> 
+                <nav>
+                    <ul>
+                        <li>HOME</li>
+                        <li>CONTATOS</li>
+                        <li id="carrinho"> CARRINHO
+                            <img src="assets/imagens/figuras/carrinho.png" alt="">
+                        </li>
+                    </ul>                    
+                </nav>
+            </div>
+        </header>
+        <section id="sect-banner"> 
+                <div id="sect-title">
+                    <h1> Bem Vindo ao Chapeu de Palha !</h1> 
+                    <div id="sect-btn" onclick="cardapio()">CONHEÇA O CARDAPIO!</div>
+                </div>
+        </section>
+
+        <aside>
+            
+        </aside>
+
+        <article>
+            <div id="menu-cardapio"> 
+                <div  id="menu-card">
+                    <h1>CARDAPIO</h1>
+                    <img src="assets/imagens/figuras/menu-hamb.png" alt="" id="menu-card-mobi" onclick="menu_card()">
+                </div>
+                <div id="cont-nav">
+                    <div class="menu" id="hamb" onclick="hamburgue()"> <img src="assets/imagens/figuras/burger_icon.png" alt=""> HAMBURGUE</div>
+                    <div class="menu" id="crepe" onclick="crepe()"> <img src="assets/imagens/figuras/taco_icon.png" alt=""> CREPE</div>
+                    <div class="menu" id="refri" onclick="refri()"> <img src="assets/imagens/figuras/refri_icon.png" alt=""> REFRIGERANTE</div>
+                    <div class="menu" id="pizza" onclick="pizza()"> <img src="assets/imagens/figuras/pizza_icon.png" alt=""> PIZZA</div>
+                    <div class="menu" id="sobremesa" onclick="sobremesa()"> <img src="assets/imagens/figuras/milkshake_icon.png" alt=""> SOBREMESA</div>
+                </div>
+            </div>
+            
+            <div id="cont-cardapio">
+                <div class="cardapio">
+                    <div class="pratos" id="prato0">
+
+                        <img src="assets/imagens/HAMB/burg0.jpg" alt="" class="img" id="img-prato0" >
+                        
+                        <div class="desc-img">
+
+                            <div class="title-img">
+
+                                <h1 id="title-id0">
+                                    NAMI-SWAN
+                                </h1> 
+
+                                <div class="preço" id="preço0">R$ 22.00</div>
+                            </div>
+                        
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                        
+                            <div class="ingredientes" id="ingredientes0">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão bola</li>
+                                    <li>Baicon</li>
+                                    <li>Queijo mussarela</li>
+                                    <li>Hamburgue artesanal</li>
+                                    <li>Alface</li>
+                                    <li>Cebelo caramelisada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato1">
+                        <img src="assets/imagens/HAMB/burg1.jpg" alt=""  class="img" id="img-prato1">
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id1">USSOP-BURG</h1>
+                                <div class="preço" id="preço1">R$ 28.00</div>
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes1">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão bola</li>
+                                    <li>Baico em tira</li>
+                                    <li>Molho branco</li>
+                                    <li>Hambugue artesanal duplo</li>
+                                    <li>Picles</li>
+                                    <li>Alface</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato2">
+                        <img src="assets/imagens/HAMB/burg2.jpg" alt=""  class="img" id="img-prato2">
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id2">TAMA-SWAN</h1>
+                                <div class="preço" id="preço2">R$ 18.00</div>
+                            </div>    
+                            <div class="comprar"onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes2">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão de brioche</li>
+                                    <li>Tomate cereja</li>
+                                    <li>Cogumelo paris</li>
+                                    <li>Hamburgue vegano</li>
+                                    <li>Agrião</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato3">
+                        <img src="assets/imagens/HAMB/burg3.jpg" alt=""  class="img" id="img-prato3"> 
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id3">BURG-BROOK</h1> 
+                                <div class="preço" id="preço3">R$ 25.00</div>
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes3">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão de Brioche</li>
+                                    <li>Baicon em tira</li>
+                                    <li>Cebola</li>
+                                    <li>Hamburgue artesanal</li>
+                                    <li>Tomate</li>
+                                    <li>Agrião</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato4">
+                        <img src="assets/imagens/HAMB/burg4.jpg" alt=""  class="img" id="img-prato4">
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id4">BURG-ZORO</h1>
+                                <div class="preço" id="preço4">R$ 27.80</div>
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes4">
+                                <h3>INGRDIENTES:</h3>
+                                <ul>
+                                    <li>Pão bola integral</li>
+                                    <li>Baicon em fatia</li>
+                                    <li>Queijo mussarela</li>
+                                    <li>Hamburgue artesanal</li>
+                                    <li>Cebola</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato5">
+
+                        <img src="assets/imagens/HAMB/burg5.jpg" alt=""  class="img" id="img-prato5">
+                        
+                        <div class="desc-img">
+
+                            <div class="title-img">
+                                <h1 id="title-id5">BURG-LUFFY</h1>
+
+                                <div class="preço" id="preço5">R$ 35.00</div>
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes5">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão brioche</li>
+                                    <li>Cheddar</li>
+                                    <li>Baicon em fatia</li>
+                                    <li>Alface</li>
+                                    <li>Cebola</li>
+                                    <li>Tomate</li>
+                                    <li>Molho especial</li>
+                                    <li>Hambrugue de frango</li>
+                                    <li>Molho branco</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato6">
+                        <img src="assets/imagens/HAMB/burg6.jpg" alt=""  class="img" id="img-prato6">
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id6">FOXY-BURG</h1>
+                                <div class="preço" id="preço6">R$ 12.50</div>
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes6">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão brioche</li>
+                                    <li>Alface</li>
+                                    <li>Picles</li>
+                                    <li>Hamburgue artesanal</li>
+                                    <li>Queijo mussarela</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="pratos" id="prato7">
+                        <img src="assets/imagens/HAMB/burg7.jpg" alt=""  class="img" id="img-prato7">
+                        <div class="desc-img">
+                            <div class="title-img">
+                                <h1 id="title-id7">SANJI-BURG</h1>
+                                <div class="preço" id="preço7">R$ 20.00</div>
+
+                            </div>
+                            <div class="comprar" onclick="adicionar()">
+                                <h4>Adicionar ao Carrinho</h4>
+                            </div>
+                            <div class="ingredientes" id="ingredientes7">
+                                <h3>INGREDIENTES:</h3>
+                                <ul>
+                                    <li>Pão brioche</li>
+                                    <li>Cheddar</li>
+                                    <li>Hambugue artesanal</li>
+                                    <li>Tomate</li>
+                                    <li>Alface</li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>    
+            </div>
+        </article>
+        <footer>
+            <div id="container-foot">
+                <div id="redes-sociais"> 
+                    <a href="https://github.com/Ronaldo-Vieira/" target="_blank"> <img src="assets/imagens/redes-sociais/github.png" alt="Simbolo do GitHub"> </a>
+
+                    <a href="https://www.linkedin.com/in/ronaldo-vieira-655ba2211/" target="_blank"> <img src="assets/imagens/redes-sociais/linkedin.png" alt="Simbolo do Linkedin"> </a>
+
+                    <a href="https://www.instagram.com/ronald_vieira18/" target="_blank"> <img src="assets/imagens/redes-sociais/insta.png" alt="Simbolo do Instagram"> </a>
+                </div>
+                <div id="copy">&copy;2021 Ronaldo Vieira</div>
+                <div id="btn-up">Volta pra cima</div>
+            </div>
+        </footer>
+        
+    </body>
+    </html>
