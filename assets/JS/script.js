@@ -1,7 +1,9 @@
 function cardapio(){
     window.location.href = "#menu-cardapio"
 };
-
+function cima(){
+    window.location.href = "#titulo-head"
+}
 window.onload = function(){
     document.querySelector('.comprar').addEventListener("click", function() {
         window.alert("Você adicionou um item ao carrinho !")
@@ -17,7 +19,6 @@ function menu_head(){
         document.querySelector("#nav-head").style.display = "flex";
     }
 }
-
 function menu_card(){
     if(document.querySelector("#cont-nav").style.display == "flex"){
         document.querySelector("#cont-nav").style.display = "none";
@@ -25,8 +26,6 @@ function menu_card(){
         document.querySelector("#cont-nav").style.display = "flex";
     }
 }
-
-
 function crepe() {
     //Alteração do titulo
     document.querySelector("#title-id0").innerText = "Banana + Ortelan"
@@ -71,7 +70,6 @@ function crepe() {
     document.querySelector('#preço3').innerText = "R$20.90" 
 
 }
-
 function refri(){
     //Alteração do titulo
     document.querySelector("#title-id0").innerText = "Antartica"
