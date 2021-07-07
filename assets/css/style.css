@@ -130,14 +130,16 @@ aside{
     font-size: 30pt;
     justify-content: space-around;
     color: var(--color_nav);
+    text-shadow: var(--shadow);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 #cont-nav{
     display: flex;
     justify-content: center;
 }
-
-
 
 .menu{
     display: flex;
@@ -270,6 +272,10 @@ aside{
     }
     #menu-head{
         margin-left: 20px;
+        margin-top: 10px;
+    }
+    #menu-head img{
+        height: 40px;
     }
     #menu-head, #menu-card-mobi{
         display: flex;
