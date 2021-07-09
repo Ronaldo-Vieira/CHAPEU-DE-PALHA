@@ -9,9 +9,7 @@ window.onload = function(){
         window.alert("Você adicionou um item ao carrinho !")
     });
 }
-function sumi_card(){
-    document.querySelector('#cont-nav').style.display = 'none'
-}
+
 function adicionar(){
     window.alert("Você adicionou um novo item ao carrinho !");
 }
